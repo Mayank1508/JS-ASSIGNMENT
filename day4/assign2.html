@@ -1,0 +1,56 @@
+<!-- Assign 2 Mayank Shelar -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Methods in string</title>
+    </head>
+<body style="background-color: turquoise; text-align: center;">
+    <p><h1>String Methods</h1></p>
+    <p><h3>Press F12</h3></p>
+
+<script>
+    let str = "HELLO WORLD";
+    let res = str.charAt(0);
+    console.log('This is our 1st O/P : ',res);
+    /*
+    Definition and Usage
+    The charAt() method returns the character at the specified index in a string.
+    The index of the first character is 0, the second character is 1, and so on.
+    */
+    let n = str.charCodeAt(0);
+    console.log('This is our 2nd O/P : ', n);
+    /*
+    Definition and Usage
+    The charCodeAt() method returns the Unicode of the character at the specified index in a string.
+    The index of the first character is 0, the second character 1, and so on.
+    */
+    let str1 = "Mayank";
+    let str2 = " Shelar";
+    let res1 = str1.concat(str2);
+    console.log('This is our 3rd O/P : ',res1);
+    /*
+    Definition and Usage
+    The concat() method is used to join two or more strings.
+    This method does not change the existing strings, but returns a new string containing the text of the joined strings.
+    */
+    let res3 = String.fromCharCode(72, 69, 76, 76, 79);
+    console.log('This is our 4th O/P : ',res3);
+    /*
+    Definition and Usage
+    The fromCharCode() method converts Unicode values into characters.
+    */
+    let str5='Hi Mayank';
+    let res4 = str5.replace('Mayank', 'Vikas');
+    console.log('This is our 5th O/P : ',res4);
+    /*
+    Definition and Usage
+    The replace() method searches a string for a specified value, or a regular expression, 
+    and returns a new string where the specified values are replaced.
+    */
+
+</script>
+
+
+</body>
+</html>
