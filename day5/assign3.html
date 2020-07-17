@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks And Grade</title>
+</head>
+<body style="background-color: indianred; text-align: center; font-size: 50px;">
+    <p><h1 style="font-style: italic; background-color: lavender; padding: 0px 50px 0px 50px; margin:0px 100px 0px 100px ;">Marks and Grade</h1></p>
+   
+    <p><h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Press F12 For Result</h2></p>
+    <script>
+        function Grade_by_if_statement(Marks=100)//Conditional statements
+        {
+            if(Marks>=35 && Marks <=50)
+            {
+                console.log(`Marks are ${Marks} and Grade is C`);
+            }
+            else if(Marks>=50 && Marks <=50)
+            {
+                console.log(`Marks are ${Marks} and Grade is B`);  
+            }
+            else if(Marks>=60 && Marks <=70)
+            {
+                console.log(`Marks are ${Marks} and Grade is B+`); 
+            }
+            else if(Marks>=70 && Marks <=80)
+            {
+                console.log(`Marks are ${Marks} and Grade is A`);  
+            } 
+            else if(Marks>=80 && Marks <=90)
+            {
+                console.log(`Marks are ${Marks} and Grade is A+`);  
+            }
+            else if(Marks>=90 && Marks <=100)
+            {
+                console.log(`Marks are ${Marks} and Grade is O`); 
+            }
+            else 
+            {
+                console.log('Fail');
+            }
+            
+        }
+        //let mks = prompt('Mention Your Marks','100');
+            //Grade_by_if_statement(mks);
+        function Grade_by_switch_case(Marks)
+        {
+            switch (true) 
+            {
+                // If score is 90 or greater
+                case Marks >= 90:
+                console.log(`Marks are ${Marks} and Grade is O`);
+                break;
+                // If score is 80 or greater
+                case Marks >= 80:
+                console.log(`Marks are ${Marks} and Grade is A`);
+                break;
+                // If score is 70 or greater
+                case Marks >= 70:
+                console.log(`Marks are ${Marks} and Grade is B`);
+                break;
+                // If score is 60 or greater
+                case Marks >= 60:
+                console.log(`Marks are ${Marks} and Grade is C`);
+                break;
+                // Anything 59 or below is failing
+                default:
+                console.log("Fail");
+            }
+            
+        }    
+        //let mks = prompt('Mention Your Marks','100');
+        //Grade_by_switch_case(mks);
+        function Grade_by_if_Ternary(Marks) // by ternary operator
+        {
+            let result = (Marks < 35) ? "Fail" :  
+             (Marks < 60) ? `Your Marks are ${Marks} and Grade is B` : 
+             (Marks < 80) ? `Your Marks are ${Marks} and Grade is A` : `Your Marks are ${Marks} and Grade is O` ;
+             console.log(result);  
+             
+        }
+        let mks = prompt('Mention Your Marks','100');
+        Grade_by_if_Ternary(mks);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

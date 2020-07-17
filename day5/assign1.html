@@ -1,0 +1,33 @@
+<!-- Assignment 1 Mayank Shelar  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Odd</title>
+</head>
+<body style="background-color: indianred; text-align: center; font-size: 50px;">
+    <p><h1 style="font-style: italic; background-color: lavender; padding: 0px 50px 0px 50px; margin:0px 100px 0px 100px ;">Even & Odd</h1></p>
+   
+    <p><h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Press F12 For Result</h2></p>
+    <script>
+     // Function To Check The Given No Is Even Or Odd  
+     function evenodd(num1=0)
+     {
+        // Conditional Statement 
+        if ((num1 % 2) == 0){
+        
+            console.log(`The number entered is ${num1} and Number is even`);//If Number Is Even  
+
+        }
+        else
+        {
+            console.log(`The number entered is ${num1} and Number is odd`);//Else Number Is Odd
+        }
+     }
+        
+        let n = prompt("Please enter the number to be checked ","0"); // Takes The Input from User
+        evenodd(n); // Calling The Function
+    </script>
+</body>
+</html>
